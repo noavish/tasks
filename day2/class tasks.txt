@@ -1,0 +1,46 @@
+/* 
+var convertWeight = function (kilos) {
+console.log(kilos*2.2);
+}
+*/
+
+/*
+var convertWeight = function (number, unit) {
+	const KILOS_TO_POUNDS = 2.2;
+	if (unit === 'pounds') {
+		console.log(number/KILOS_TO_POUNDS);
+    } else {
+		console.log(number*KILOS_TO_POUNDS);
+    }
+}
+
+convertWeight(100, 'pounds');
+*/
+
+/*
+var convertWeight = function (number, unit) {
+	if (unit !== 'pounds' && unit !== 'kilos') {
+		console.log ('wrong unit');
+    } else if ((typeof number) !== "number") {
+		console.log ('not a number');
+    } else {
+		const KILOS_TO_POUNDS = 2.2;
+		if (unit === 'pounds') {
+			console.log(number/KILOS_TO_POUNDS);
+    	} else {
+			console.log(number*KILOS_TO_POUNDS);
+    	}
+	}
+}
+
+convertWeight(123, 'kilos');
+*/
+
+Roee and I worked together:
+person.newPet = function (newName, type) {
+	if (type in person.pets) {
+    	console.log("You already have a " + type + " please give your new pet for adoption");
+	} else {
+		person.pets[type] = newName;
+    }
+}
